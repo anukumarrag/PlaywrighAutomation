@@ -1,0 +1,36 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation project for comparing buy trade data between UAT and Production environments",
+  "scripts": {
+    "test": "playwright test",
+    "test:uat": "ENV=uat playwright test",
+    "test:prod": "ENV=prod playwright test",
+    "test:compare": "playwright test tests/buyTrade.spec.ts",
+    "report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anukumarrag/PlaywrighAutomation.git"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "trade",
+    "uat",
+    "production"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anukumarrag/PlaywrighAutomation/issues"
+  },
+  "homepage": "https://github.com/anukumarrag/PlaywrighAutomation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "dotenv": "^17.3.1",
+    "typescript": "^5.9.3"
+  }
+}
